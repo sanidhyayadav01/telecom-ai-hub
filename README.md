@@ -198,6 +198,6 @@ Unlike traditional telecom systems that separate training, communication, and co
 
 # Author
 
-**Sanidhya Yadav**  
+**Sanidhya Yadav & Team**  
 Final Year CSE Student  
 Medi-Caps University
