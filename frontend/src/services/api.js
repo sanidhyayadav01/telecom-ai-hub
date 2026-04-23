@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE = "http://localhost:8000";
+const BASE = "https://telecom-ai-backend.onrender.com";
 
 export const aiChat = async (mode, message) => {
   const res = await axios.post(`${BASE}/api/ai/chat`, {
