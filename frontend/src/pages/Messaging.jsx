@@ -15,7 +15,7 @@ export default function Messaging() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/messaging/rewrite",
+        "https://telecom-ai-backend.onrender.com/api/messaging/rewrite",
         {
           text: message
         }

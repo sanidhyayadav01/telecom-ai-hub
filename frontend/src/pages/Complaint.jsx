@@ -17,7 +17,7 @@ export default function Complaint() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/complaint/submit",
+        "https://telecom-ai-backend.onrender.com/api/complaint/submit",
         {
           text: complaint
         }

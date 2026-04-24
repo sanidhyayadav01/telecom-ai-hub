@@ -23,7 +23,7 @@ export default function Quiz() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/quiz/generate",
+        "https://telecom-ai-backend.onrender.com/api/quiz/generate",
         {
           topic: topic,
         }
