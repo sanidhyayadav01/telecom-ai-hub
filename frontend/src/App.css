@@ -28,18 +28,21 @@ body {
 }
 
 button {
-  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
   border: none;
   color: white;
   padding: 14px 24px;
   border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.25);
 }
 
 button:hover {
-  transform: scale(1.05);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
 }
 
 .card {
@@ -64,4 +67,25 @@ pre {
   background: #1e293b;
   padding: 15px;
   border-radius: 10px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  border: 1px solid rgba(59, 130, 246, 0.6);
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.15),
+    rgba(6, 182, 212, 0.1)
+  );
 }
