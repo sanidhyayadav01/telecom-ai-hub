@@ -10,6 +10,19 @@ a {
   color: inherit;
 }
 
+/* ===== GLOBAL RESET (IMPORTANT FIX) ===== */
+button {
+  border: none;
+  outline: none;
+}
+
+/* Prevent unwanted default focus/hover shadows */
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
 /* ===== HOME UI ===== */
 
 .home-container {
@@ -27,21 +40,24 @@ a {
   margin-bottom: 40px;
 }
 
-/* ===== BUTTONS ===== */
+/* ===== PRIMARY BUTTON (renamed from global button) ===== */
 
 button {
   background: linear-gradient(135deg, #3b82f6, #2563eb);
-  border: none;
   color: white;
   padding: 14px 24px;
   border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s ease;
+}
+
+/* Apply shadow ONLY to main buttons */
+button.primary {
   box-shadow: 0 6px 15px rgba(59, 130, 246, 0.25);
 }
 
-button:hover {
+button.primary:hover {
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
   background: linear-gradient(135deg, #2563eb, #06b6d4);
@@ -50,7 +66,7 @@ button:hover {
 /* ===== CARDS ===== */
 
 .card {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 20px;
   margin: 20px auto;
@@ -108,11 +124,32 @@ pre {
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.25);
 }
 
 .hero-button:hover {
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
   background: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.hamburger-btn {
+  font-size: 22px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: none !important;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.hamburger-btn:hover {
+  transform: scale(1.1);
+  color: #3b82f6;
+}
+
+.hamburger-btn:focus,
+.hamburger-btn:active {
+  outline: none;
+  box-shadow: none !important;
 }

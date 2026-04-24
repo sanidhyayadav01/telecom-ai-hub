@@ -23,17 +23,11 @@ export default function Sidebar() {
     <>
       {/* Top Navbar */}
       <div style={styles.topbar}>
-        <button
-          onClick={() => setOpen(!open)}
-          style={styles.hamburger}
-        >
+        <button className="hamburger-btn" onClick={() => setOpen(!open)}>
           ☰
         </button>
 
-        <h3
-          style={styles.logo}
-          onClick={() => navigate("/")}
-        >
+        <h3 style={styles.logo} onClick={() => navigate("/")}>
           Telecom AI Hub
         </h3>
       </div>
@@ -42,9 +36,7 @@ export default function Sidebar() {
       <div
         style={{
           ...styles.sidebar,
-          transform: open
-            ? "translateX(0)"
-            : "translateX(-100%)",
+          transform: open ? "translateX(0)" : "translateX(-100%)",
         }}
       >
         {menuItems.map((item, index) => (
@@ -55,9 +47,7 @@ export default function Sidebar() {
             style={{
               ...styles.link,
               background:
-                location.pathname === item.path
-                  ? "#8b5cf6"
-                  : "transparent",
+                location.pathname === item.path ? "#8b5cf6" : "transparent",
             }}
           >
             {item.name}
@@ -66,31 +56,26 @@ export default function Sidebar() {
       </div>
 
       {/* Overlay */}
-      {open && (
-        <div
-          style={styles.overlay}
-          onClick={() => setOpen(false)}
-        />
-      )}
+      {open && <div style={styles.overlay} onClick={() => setOpen(false)} />}
     </>
   );
 }
 
 const styles = {
-topbar: {
-  height: "60px",
-  background: "#0f1b33",
-  display: "flex",
-  alignItems: "center",
-  gap: "12px",
-  padding: "0 20px",
-  position: "fixed",
-  top: 0,
-  left: 0,
-  width: "100%",
-  zIndex: 9999,   // increased
-  color: "white",
-},
+  topbar: {
+    height: "60px",
+    background: "#0f1b33",
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    padding: "0 20px",
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    zIndex: 9999, // increased
+    color: "white",
+  },
 
   hamburger: {
     fontSize: "22px",
