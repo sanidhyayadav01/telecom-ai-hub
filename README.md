@@ -1,5 +1,5 @@
 # Telecom AI Hub 🚀
-
+#This project is an ai telecom hub project
 An integrated AI-powered telecom platform that combines learning, customer support, communication assistance, and analytics into one unified system.
 
 This project merges two telecom-based AI projects into a single scalable application using **React**, **FastAPI**, and **Groq Llama 3.3**.
