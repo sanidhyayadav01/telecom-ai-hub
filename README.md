@@ -1,4 +1,4 @@
-# Telecom AI Hub 🚀
+# Telecom AI Hub🚀
 
 An integrated AI-powered telecom platform that combines learning, customer support, communication assistance, and analytics into one unified system.
 
