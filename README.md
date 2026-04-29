@@ -4,7 +4,6 @@ An integrated AI-powered telecom platform that combines learning, customer suppo
 
 This project merges two telecom-based AI projects into a single scalable application using **React**, **FastAPI**, and **Groq Llama 3.3**.
 
----
 
 ## Problem Statement
 
